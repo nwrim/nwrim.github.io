@@ -4,3 +4,9 @@
 .add-top-padding {
     padding-top: 16px;
 }
+
+.publication-sub-list {
+    list-style-type: none;
+    padding-left: 20px; /* Adjust this value to control the spacing before the bullet point */
+  }
+  
