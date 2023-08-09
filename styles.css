@@ -10,3 +10,10 @@
     padding-left: 20px; /* Adjust this value to control the spacing before the bullet point */
   }
   
+  .line-divider {
+    border-top: 2px solid black;
+    width: 100%;
+    /*margin: 0 auto; /* Center align the line horizontally */
+    padding-top: 8px; /* Add some padding above the line */
+    padding-bottom: 8px; /* Add some padding below the line */
+  }
