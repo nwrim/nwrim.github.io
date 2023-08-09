@@ -18,40 +18,68 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <!-- Navbar Brand -->
-        <a class="navbar-brand" href="index.html">Nakwon Rim</a>
-        
-        <!-- toggle button for mobile-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Navbar content-->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="publications.html">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="asset/CV.pdf">CV</a>
-          </li>
-          </ul>
-        </div>
+  <div class="container">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand" href="index.html">Nakwon Rim</a>
+    
+    <!-- toggle button for mobile-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navbar content-->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="asset/CV.pdf">CV</a>
+      </li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="row justify-content-center">
-      <div class="col-md-2 d-flex flex-column justify-content-start align-items-center add-top-padding" style="min-width: 200px; max-width: 350px;">
-          <img class="img-fluid mx-auto mb-3 align-self-start" style="width: 95%" src="asset/img/p0.jpg" alt="Placeholder Image">
+  <div class="row">
+    <div class="col-md-2 add-top-padding d-flex flex-column justify-content-start align-items-center">
+      <img class="img-fluid" style="max-height: 350px;" src="asset/img/p0.jpg" alt="Profile Image">
+      
+      <div class="align-self-start d-none d-lg-block">
+        <div class="d-flex align-self-start pt-2 pb-1">        
+          <a class="btn btn-outline-primary" href="asset/CV.pdf" role="button">
+            <i class="fa-solid fa-file-arrow-down"></i> CV
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">
+          <a class="btn btn-outline-primary" href="https://twitter.com/NakWonRim" role="button">
+              <i class="fa-brands fa-twitter fa-lg"></i> Twitter
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">
+          <a class="btn btn-outline-primary" href="https://github.com/nwrim/" role="button">
+            <i class="fa-brands fa-github fa-lg"></i> Github
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">        
+          <a class="btn btn-outline-primary" href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" role="button">
+            <i class="ai ai-google-scholar ai-lg"></i> Google Scholar
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">        
+          <a class="btn btn-outline-primary" href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" role="button">
+            <i class="ai ai-orcid ai-lg"></i> ORCID
+          </a>
+        </div>
       </div>
-    <div class="col-md-10 add-top-padding">
+    </div>
+
+    <div class="col-md-8 add-top-padding">
       <h1>Nakwon Rim</h1>
       <p>
         Hi! I am a doctoral student in the Integrative Neuroscience program (Department of Psychology) at the University of Chicago. 
@@ -71,25 +99,32 @@
       <h5><i class="fa-solid fa-graduation-cap" style="color: #000000;"></i> B.A. in Psychology & BS in Brain Cognitive Science, 2019</h5>
       <p>The University of Chicago | Advisor - Dr. Yang Seok Cho</p>
       
-      <div class="d-flex justify-content-start">
-        <a class="btn btn-outline-primary" href="https://twitter.com/NakWonRim" role="button">
-            <i class="fa-brands fa-twitter fa-lg"></i> Twitter
-        </a>
-      </div>
-      <div class="d-flex justify-content-start pt-2">
-        <a class="btn btn-outline-primary" href="https://github.com/nwrim/" role="button">
-          <i class="fa-brands fa-github fa-lg"></i> Github
-        </a>
-      </div>
-      <div class="d-flex justify-content-start pt-2">        
-        <a class="btn btn-outline-primary" href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" role="button">
-          <i class="ai ai-google-scholar ai-lg"></i> Google Scholar
-        </a>
-      </div>
-      <div class="d-flex justify-content-start pt-2 pb-2">        
-        <a class="btn btn-outline-primary" href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" role="button">
-          <i class="ai ai-orcid ai-lg"></i> ORCID
-        </a>
+      <div class="align-self-start d-lg-none">
+        <div class="d-flex align-self-start pt-2 pb-1">        
+          <a class="btn btn-outline-primary" href="asset/CV.pdf" role="button">
+            <i class="fa-solid fa-file-arrow-down"></i> CV
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">
+          <a class="btn btn-outline-primary" href="https://twitter.com/NakWonRim" role="button">
+              <i class="fa-brands fa-twitter fa-lg"></i> Twitter
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">
+          <a class="btn btn-outline-primary" href="https://github.com/nwrim/" role="button">
+            <i class="fa-brands fa-github fa-lg"></i> Github
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">        
+          <a class="btn btn-outline-primary" href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" role="button">
+            <i class="ai ai-google-scholar ai-lg"></i> Google Scholar
+          </a>
+        </div>
+        <div class="d-flex align-self-start pt-1 pb-1">        
+          <a class="btn btn-outline-primary" href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" role="button">
+            <i class="ai ai-orcid ai-lg"></i> ORCID
+          </a>
+        </div>
       </div>
     </div>
   </div>
