@@ -1,3 +1,3 @@
-# bootstrap_practice
+# Nakwon Rim
 
-Attempt at learning html/bootstrap by creating a website with help from LLMs.
+This is a personal website that I created while attempting to learn html/css/bootstrap a bit more!
