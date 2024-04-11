@@ -1,8 +1,14 @@
 /* styles.css */
 
-/* adding padding above the text */
-.add-top-padding {
-    padding-top: 16px;
+/* adding margin above the text */
+.add-top-margin {
+    margin-top: 16px;
+}
+
+.pub-card {
+  margin-bottom: 16px;
+  margin-left:16px;
+  margin-right:16px;
 }
 
 .publication-sub-list {
