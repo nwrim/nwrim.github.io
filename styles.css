@@ -23,3 +23,9 @@
     padding-top: 8px; /* Add some padding above the line */
     padding-bottom: 8px; /* Add some padding below the line */
   }
+
+  .btn-custom {
+    padding-top:1px;
+    padding-bottom:1px;
+    margin-top:2px
+  }
