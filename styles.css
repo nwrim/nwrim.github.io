@@ -1,0 +1,292 @@
+:root {
+  --primary: #6e71b2;
+  --accent0: #c82e3c;
+  --accent1: #0a60a8;
+  --white: #ffffff;
+  --light: #b2b2f9;
+
+  /* Lighter purple, used for link hover lift */
+  --link-hover: #a383c6;
+
+  --paper: #f8f8fc;
+  --ink: #221b2c;
+}
+
+/* Base */
+body {
+  font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
+}
+
+h1 { font-weight: 600; }
+h2 { font-weight: 600; }
+
+/* Force true bold: the UA default "bolder" maps to only 400 inside
+   Bootstrap's light .lead (font-weight 300), so set it explicitly */
+b, strong {
+  font-weight: 700;
+}
+
+/* Quiet, academic hyperlinks */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Keep underline off UI / icon / button links */
+.navbar-brand:hover,
+.nav-link:hover,
+.hero-social a:hover,
+.social-icons a:hover {
+  text-decoration: none;
+}
+
+/* Ensure buttons remain button-like */
+.btn {
+  text-decoration: none !important;
+}
+
+
+/* Navbar — solid, static */
+.navbar {
+  background-color: var(--primary) !important;
+  box-shadow: 0 1px 0 rgba(110, 113, 178, 0.12);
+}
+
+.navbar-brand {
+  letter-spacing: -0.01em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Primary background override (footer) */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+/* Heading colors */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+/* Display name in the hero */
+#home h1 {
+  font-size: clamp(2.1rem, 4vw, 2.9rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+#home .lead {
+  font-size: 1.12rem;
+}
+
+/* Profile photo */
+.profile-photo {
+  max-width: 240px;
+  border: 4px solid var(--white);
+  box-shadow: 0 12px 32px rgba(110, 113, 178, 0.2);
+}
+
+/* Hero social icons */
+.hero-social {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-social a {
+  color: var(--primary);
+  font-size: 1.35rem;
+}
+
+.hero-social a:hover {
+  color: var(--link-hover);
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(110, 113, 178, 0.06);
+}
+
+.card-body {
+  padding: 1.75rem;
+}
+
+/* Per-topic accent (set --card-accent inline on each card) */
+.card-topic {
+  border-top: 4px solid var(--card-accent, var(--primary));
+}
+
+.card-topic .card-title,
+.card-topic .card-subtitle {
+  color: var(--card-accent, var(--primary));
+}
+
+.card-title {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.card-subtitle {
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--light);
+}
+
+/* Section heading */
+.section-heading {
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2.5rem;
+  bottom: 0;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* Section-level note (Google Scholar) */
+.section-note {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+/* Publications */
+.publication-item {
+  padding: 1rem 0;
+  border-top: 1px solid var(--light);
+}
+
+.publication-item:first-child {
+  border-top: none;
+}
+
+.publication-year {
+  margin: 0 0 0.3rem 0;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.publication-title {
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+}
+
+.publication-authors {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.publication-venue {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.publication-finding {
+  margin: 0.1rem 0 0.6rem 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--light);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.publication-links .btn {
+  margin-right: 0.25rem;
+}
+
+/* Publication figure (GIF / image) */
+.publication-figure {
+  border: 1px solid var(--light);
+  border-radius: 6px;
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: var(--white);
+}
+
+/* Custom outline button variants (Bootstrap-native) */
+.btn-outline-accent0 {
+  --bs-btn-color: var(--accent0);
+  --bs-btn-border-color: var(--accent0);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--accent0);
+  --bs-btn-hover-border-color: var(--accent0);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--accent0);
+  --bs-btn-active-border-color: var(--accent0);
+}
+
+.btn-outline-accent1 {
+  --bs-btn-color: var(--accent1);
+  --bs-btn-border-color: var(--accent1);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--accent1);
+  --bs-btn-hover-border-color: var(--accent1);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--accent1);
+  --bs-btn-active-border-color: var(--accent1);
+}
+
+/* Text "CV" link in the hero social row */
+.hero-social .hero-cv {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hero-social .hero-cv:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Footer social row — center icons and the CV text on one line */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons .footer-cv {
+  font-size: 1.15rem;
+  font-weight: 700;
+}

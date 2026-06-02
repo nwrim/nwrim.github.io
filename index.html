@@ -3,181 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nakwon Rim</title>
+    <title>Nakwon Rim | Home</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.5.2/js/all.js" crossorigin="anonymous"></script>
-    <!-- Acidemicons-->
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+
+    <!-- Academicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <!-- Google Fonts: Fraunces (display headings) + Atkinson Hyperlegible (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
+
+    <!-- SEO -->
+    <meta name="description" content="Academic homepage of Nakwon Rim. Research interests and selected publications.">
 </head>
+
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Nakwon Rim</a>
+    <nav class="bg-primary navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-lg px-3 px-lg-5">
+
+            <a class="navbar-brand text-white fw-bold" href="index.html">Nakwon Rim</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#research">Research</a></li> -->
-                    <!-- <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="asset/CV.pdf">CV</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="asset/CV.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            CV
+                        </a>
+                    </li>
                 </ul>
             </div>
+
         </div>
     </nav>
-    
-    <!-- Hero Section -->
-    <header id="home" class="bg-primary text-white py-5 mt-5">
-        <div class="container">
+
+    <!-- Intro -->
+    <section id="home" class="py-5 mt-5">
+        <div class="container-lg px-3 px-lg-5">
             <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 text-center">
-                    <img src="asset/img/p0.jpg" class="img-fluid rounded-circle profile-photo mx-auto d-block">
+
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+                    <img src="asset/img/p0.jpg"
+                         alt="Portrait of Nakwon Rim"
+                         class="img-fluid rounded-circle profile-photo mx-auto d-block">
                 </div>
-                <div class="col-lg-8 col-md-12 text-center text-lg-start">
-                    <h1 class="display-5 fw-bold mb-3">Nakwon Rim / 임낙원</h1>
-                    <!-- <p class="lead mb-0">Ph.D. Student, Department of Pscyhology, University of Chicago</p> -->
-                    <p class="lead mb-2">Hi! I am a Ph.D. student working with <a href="https://voices.uchicago.edu/bermanlab/" class="text-white">Marc G. Berman</a> (Psychology), <a href="https://www.knowledgelab.org/" class="text-white">James A. Evans</a> (Sociology & Data Science), and <a href="https://mcnlab.uchicago.edu/" class="text-white">Yuan Chang Leong</a> (Psychology) at the University of Chicago.<br>I am broadly interested in how people compress information about the world, how this information compression shapes our cognitive processes, and how people deliver compressed information to others.</p>
+
+                <div class="col-12 col-lg-8 text-start order-2 order-lg-1">
+                    <h1 class="fw-bold mb-3">Nakwon Rim / 임낙원</h1>
+                    <p class="lead mb-0">I am a Ph.D. Candidate at the <a href="https://www.psychology.uchicago.edu/">Department of Psychology</a> at <a href="https://www.uchicago.edu/">the University of Chicago</a>.</p>
+                    <p class="lead mb-0">My primary advisors are <a href="https://voices.uchicago.edu/bermanlab/">Marc G. Berman</a> and <a href="https://mcnlab.uchicago.edu/">Yuan Chang Leong</a>, and I collaborate with <a href="https://brainbridgelab.uchicago.edu/">Wilma A. Bainbridge</a> and <a href="https://www.knowledgelab.org/">James A. Evans</a>.</p>
+
+                    <div class="hero-social">
+                        <a href="mailto:nakwon.rim@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                        <a href="https://github.com/nwrim" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="asset/CV.pdf"
+                           class="hero-cv"
+                           target="_blank"
+                           rel="noopener noreferrer">CV</a>
+                    </div>
                 </div>
+
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Research Interests -->
     <section id="research" class="py-3">
-        <div class="container">
-            <h2 class="text-center section-heading mb-5">Research Interests</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-minimize fa-3x mb-3" style="color: var(--primary);"></i>
-                            <h5 class="card-title">Information Compression</h5>
-                            <p class="card-text">How do we compress the information from the environments surrounding us, and how does this affect our behavior?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-right-left fa-3x mb-3" style="color: var(--primary);"></i>
-                            <h5 class="card-title">Information Transduction</h5>
-                            <p class="card-text">How do we deliver the (compressed) information to other people, and how does this affect our behavior?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-microchip fa-3x mb-3" style="color: var(--primary);"></i>
-                            <h5 class="card-title">Computational Social Science</h5>
-                            <p class="card-text">How can we leverage the increasingly available data and powerful computational tools to answer questions about ourselves?</p>
+        <div class="container-lg px-3 px-lg-5">
+
+            <h2 class="section-heading mb-3">
+                Research Interests
+            </h2>
+
+            <!-- Research summary / framing -->
+            <p class="lead mb-3">
+                <strong>I study why some (social) information is processed more than others.</strong> This prioritization sometimes diverges across groups, such as political partisans seeing the world differently, and is sometimes shared across people, such as some faces being more remembered than others. To study these questions, I primarily use computational methods combined with behavioral and neuroimaging experiments.
+            </p>
+
+            <!-- Shared publication scope note -->
+            <p class="section-note">
+                Selected publications for each research interest are shown below.
+                For a complete list, please see my
+                <a href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Google Scholar profile
+                </a>.
+            </p>
+
+            <!-- Research Interest Card -->
+            <div class="col-12 mb-4">
+                <div class="card h-100 card-topic">
+                    <div class="card-body">
+
+                        <h3 class="card-title">Group Differences in Information Processing</h3>
+                        <p class="card-text">
+                            Why do different groups of people (e.g., political partisans) process the same information differently?
+                        </p>
+
+                        <h4 class="card-subtitle">Related Publications</h4>
+
+                        <div class="publication-list">
+
+                            <div class="publication-item">
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-md-auto text-center d-none d-md-block">
+                                        <img src="asset/img/rim_2026_comm_psych.webp"
+                                             alt="Figure from Rim et al. (2026), Communications Psychology"
+                                             class="publication-figure img-fluid"
+                                             loading="lazy">
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <h5 class="publication-title">
+                                            Natural language reveals that political partisans are more affectively aligned over political issues than partisan identities
+                                        </h5>
+                                        <p class="publication-year">2026</p>
+                                        <p class="publication-authors">
+                                            <strong>Rim, N.</strong>, Jackson, J. C., Berman, M. G., & Leong, Y. C.
+                                        </p>
+                                        <p class="publication-venue">
+                                            <em>Communications Psychology, 4</em>(1), 65.
+                                        </p>
+                                        <p class="publication-finding">
+                                            We analyzed ~300 million Reddit comments and ~7 million news articles from partisan sources and found that partisan language is less affectively divided over political issues than over identity labels, suggesting meaningful affective alignment despite partisan animosity.
+                                        </p>
+                                        <div class="publication-links">
+                                            <a href="https://www.nature.com/articles/s44271-026-00430-x"
+                                               class="btn btn-sm btn-outline-accent0"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-arrow-up-right-from-square"></i> Paper
+                                            </a>
+                                            <a href="https://osf.io/w2t6q/"
+                                               class="btn btn-sm btn-outline-accent1"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-code"></i> Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-md-auto text-center d-none d-md-block">
+                                        <img src="asset/img/sulik_2025_NHB.webp"
+                                             alt="Figure from Sulik et al. (2025), Nature Human Behaviour"
+                                             class="publication-figure img-fluid"
+                                             loading="lazy">
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <h5 class="publication-title">
+                                            Differences in psychologists' cognitive traits are associated with scientific divides
+                                        </h5>
+                                        <p class="publication-year">2025</p>
+                                        <p class="publication-authors">
+                                            Sulik, J., <strong>Rim, N.</strong>, Pontikes, E., Evans, J., & Lupyan, G.
+                                        </p>
+                                        <p class="publication-venue">
+                                            <em>Nature Human Behaviour, 9</em>, 1147–1161.
+                                        </p>
+                                        <p class="publication-finding">
+                                            Scientific disagreements are not just a matter of using different methods or having conflicting data: we surveyed 7,973 researchers in psychological sciences and found that disagreements are also associated with what they research and with their cognitive traits.
+                                        </p>
+                                        <div class="publication-links">
+                                            <a href="https://www.nature.com/articles/s41562-025-02153-1"
+                                               class="btn btn-sm btn-outline-accent0"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-arrow-up-right-from-square"></i> Paper
+                                            </a>
+                                            <a href="https://osf.io/zyec9/"
+                                               class="btn btn-sm btn-outline-accent1"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-code"></i> Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Research Interest Card -->
+            <div class="col-12 mb-4">
+                <div class="card h-100 card-topic">
+                    <div class="card-body">
+
+                        <h3 class="card-title">Stimulus-driven Memorability</h3>
+                        <p class="card-text">
+                            Why is some information (e.g., faces, scenes) consistently more memorable than others, across different people?
+                        </p>
+
+                        <h4 class="card-subtitle">Related Publications</h4>
+
+                        <div class="publication-list">
+
+                            <div class="publication-item">
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-md-auto text-center d-none d-md-block">
+                                        <img src="asset/img/rim_2026_inprep.webp"
+                                             alt="Animated figure from Rim et al. (in preparation)"
+                                             class="publication-figure img-fluid"
+                                             loading="lazy">
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <h5 class="publication-title">
+                                            Facial Features Underlying Social Judgments Affect Face Memorability
+                                        </h5>
+                                        <p class="publication-year">In Preparation</p>
+                                        <p class="publication-authors">
+                                            <strong>Rim, N.</strong>, Berman, M. G., Uddenberg, S., & Bainbridge, W. A.
+                                        </p>
+                                        <!-- <div class="publication-links">
+                                            <a href="#"
+                                               class="btn btn-sm btn-outline-accent0"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-arrow-up-right-from-square"></i> Paper
+                                            </a>
+                                            <a href="#"
+                                               class="btn btn-sm btn-outline-accent1"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-code"></i> Code
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-md-auto text-center d-none d-md-block">
+                                        <img src="asset/img/rim_2026_psyarxiv.webp"
+                                             alt="Animated figure from Rim et al. (2025), PsyArXiv"
+                                             class="publication-figure img-fluid"
+                                             loading="lazy">
+                                    </div>
+                                    <div class="col-12 col-md">
+                                        <h5 class="publication-title">
+                                            Natural scenes are more compressible and less memorable than human-made scenes
+                                        </h5>
+                                        <p class="publication-year">2025</p>
+                                        <p class="publication-authors">
+                                            <strong>Rim, N.</strong>, Veillette, J., Lee, S. M., Kardan, O., Krishnan, S., Bainbridge, W. A., & Berman, M. G.
+                                        </p>
+                                        <p class="publication-venue">
+                                            <em>PsyArXiv</em>
+                                        </p>
+                                        <p class="publication-finding">
+                                            Across three behavioral experiments and a computational analysis of 108,754 scene images, we found that natural scenes contain less noticeable information than human-made scenes, making them more compressible, and that they are less memorable.
+                                        </p>
+                                        <div class="publication-links">
+                                            <a href="https://osf.io/preprints/psyarxiv/xw3ek"
+                                               class="btn btn-sm btn-outline-accent0"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-arrow-up-right-from-square"></i> Paper
+                                            </a>
+                                            <a href="https://github.com/nwrim/naturalness_compression_memorability"
+                                               class="btn btn-sm btn-outline-accent1"
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+                                                <i class="fas fa-code"></i> Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-
-    <!-- Publications -->
-    <section id="publications" class="py-3 bg-light">
-        <div class="container">
-            <h2 class="text-center section-heading mb-5">Featured Publications</h2>
-            <div class="list-group mb-4">
-                <a href="https://osf.io/preprints/psyarxiv/xw3ek" class="list-group-item">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Natural scenes are more compressible and less memorable than human-made scenes</h5>
-                        <p>2025</p>
-                    </div>
-                    <p class="mb-1"><b>Rim, N.</b>, Veillette, J., Lee, S. M., Kardan, O., Krishnan, S., Bainbridge, W. A., & Berman, M. G.</p>
-                    <p class="mb-1"><i>PsyArXiv</i></p>
-                </a>  
-                <a href="https://www.nature.com/articles/s41562-025-02153-1" class="list-group-item">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Differences in psychologists' cognitive traits are associated with scientific divides</h5>
-                        <p>2025</p>
-                    </div>
-                    <p class="mb-1">Sulik, J., <b>Rim, N.</b>, Pontikes, E., Evans, J., & Lupyan, G.</p>
-                    <p class="mb-1"><i>Nature Human Behaviour, 9</i>, 1147-1161.</p>
-                </a>
-                <a href="https://www.pnas.org/doi/full/10.1073/pnas.2022472118" class="list-group-item">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Evidence and theory for lower rates of depression in larger US urban areas</h5>
-                        <p>2021</p>
-                    </div>
-                    <p class="mb-1">Stier, A. J., Schertz, K. E., <b>Rim, N. W.</b>, Cardenas-Iniguez, C., Lahey, B. B., Bettencourt, L. M., & Berman, M. G.</p>
-                    <p class="mb-1"><i>Proceedings of the National Academy of Sciences, 118</i>(31), e2022472118.</p>
-                </a>
-            </div>
-            <div class="text-center mb-4">
-                <p class="lead">For a complete list of publications, please visit the my Google Scholar profile or the All Publications page.</p>
-            </div>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" class="btn btn-primary btn-lg"><i class="ai ai-google-scholar ai-lg"></i> Google Scholar</a>
-                <a href="publications.html" class="btn btn-primary btn-lg">All Publications</a>
-            </div>
-        </div>
-    </section>
-    <!-- Ongoing projects -->
-    <!-- <section id="publications" class="py-3">
-        <div class="container">
-            <h2 class="text-center section-heading mb-5">Ongoing Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fas fa-brain fa-3x mb-3" style="color: var(--primary);"></i>
-                            <h5 class="card-title">Artificial Intelligence</h5>
-                            <p class="card-text">Focus on machine learning and natural language processing.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- CV -->
-    <div id="cv" class="section py-3">
-        <div class="container">
-            <h2 class="text-center section-heading mb-5">Curriculum Vitae</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <!-- <h3 class="mb-2">Education</h3> -->
-                    <ul class="list-unstyled">
-                        <li>
-                            <h5>Ph.D. in Psychology</h5>
-                            University of Chicago, Ongoing
-                        </li>
-                        <li>
-                            <h5>M.A. in Computational Social Science & Psychology</h5>
-                            University of Chicago, 2023
-                        </li>
-                        <li>
-                            <h5>B.A. in Psychology & B.S. in Brain Cognitive Science</h5>
-                            Korea University, 2019
-                        </li>
-                    </ul>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="asset/CV.pdf" class="btn btn-primary btn-lg">Download full CV</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center py-4">
-        <div class="container">
-            <p>&copy; 2025 Nakwon Rim</p>
+        <div class="container-lg px-3 px-lg-5">
+
+            <p>&copy; 2026 Nakwon Rim</p>
+
             <div class="social-icons mt-3">
-                <a href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ" class="text-white me-3"><i class="ai ai-google-scholar ai-lg"></i></a>
-                <a href="https://x.com/NakWonRim" class="text-white me-3"><i class="fab fa-x-twitter fa-lg"></i></a>
-                <a href="https://github.com/nwrim" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+                <a href="mailto:nakwon.rim@gmail.com"
+                   class="text-white me-3"
+                   aria-label="Email">
+                    <i class="fas fa-envelope fa-lg"></i>
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=wRBQRzwAAAAJ"
+                   class="text-white me-3"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Google Scholar">
+                    <i class="ai ai-google-scholar ai-lg"></i>
+                </a>
+
+                <a href="https://github.com/nwrim"
+                   class="text-white me-3"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+
+                <a href="asset/CV.pdf"
+                   class="text-white footer-cv"
+                   target="_blank"
+                   rel="noopener noreferrer">CV</a>
             </div>
+
         </div>
     </footer>
 
